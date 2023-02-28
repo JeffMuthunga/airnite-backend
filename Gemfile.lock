@@ -20,6 +20,8 @@ GEM
       database_cleaner-core (~> 2.0.0)
     database_cleaner-core (2.0.1)
     diff-lcs (1.5.0)
+    faker (3.1.1)
+      i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
@@ -84,6 +86,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   database_cleaner
+  faker
   pry
   rack-contrib
   rack-cors

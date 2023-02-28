@@ -1,6 +1,9 @@
 puts "🌱 Seeding data..."
 
-images = ["https://images.pexels.com/photos/2980955/pexels-photo-2980955.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=699.825&fit=crop&h=1133.05",
+
+
+20.times do
+    images = ["https://images.pexels.com/photos/2980955/pexels-photo-2980955.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=699.825&fit=crop&h=1133.05",
 "https://images.pexels.com/photos/463996/pexels-photo-463996.jpeg?auto=compress&cs=tinysrgb&w=1600",
 "https://cf.bstatic.com/xdata/images/hotel/max1280x900/186576516.jpg?k=b31efb6b486fbd01e812ba18d33f62b4f7fa68bce04ada60143aa6460c257718&o=&hp=1",
 "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/d9/bf/a5/biggest-bedroom-48-square.jpg?w=1200&h=-1&s=1",
@@ -14,13 +17,11 @@ images = ["https://images.pexels.com/photos/2980955/pexels-photo-2980955.jpeg?au
 "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1600"
 
 ]
-
-20.times do
     property=Property.create(
-        title: Faker::,
+        title: Faker::Company.name + "Hotel",
         bedrooms: rand(2..9),
         sqrfeet: rand(1000..6000),
-        city: Faker::Address.En.city,
+        city: Faker::Address.city,
         price: rand(2500..30000),
         description: Faker::Lorem.sentence,
         image: images.sample
