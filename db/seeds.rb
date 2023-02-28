@@ -27,14 +27,24 @@ puts "🌱 Seeding data..."
         image: images.sample
     )
 
+   
+
     rand(1..6).times do
     Review.create(
         score: rand(1..10),
         comment: Faker::Lorem.sentence,
         property_id: property.id
+        user_id: rand(1..20)
     )
 
     end
+
+end
+
+20.times do
+    user = User.create(
+        name: Faker::Name.name
+    )
 
 end
 
