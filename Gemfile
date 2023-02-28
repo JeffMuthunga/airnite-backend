@@ -18,6 +18,8 @@ gem 'sqlite3'
 
 gem 'require_all'
 
+gem 'faker'
+
 group :development do 
     gem 'pry'
 
