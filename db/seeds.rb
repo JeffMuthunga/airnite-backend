@@ -26,6 +26,8 @@ puts "🌱 Seeding data..."
         description: Faker::Lorem.sentence,
         image: images.sample
     )
+   
+
 
    
 
@@ -45,7 +47,6 @@ end
     user = User.create(
         name: Faker::Name.name
     )
-
 end
 
 puts "🌱 Seeding complete"
