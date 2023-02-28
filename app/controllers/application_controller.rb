@@ -3,12 +3,12 @@ class ApplicationController < Sinatra::Base
 
     get '/properties' do
         properties = Property.all
-        properties.to_json
+        properties.to_json(include: :reviews)
     end
 
     get '/properties/:id' do 
         property = Property.find(params[:id])
-        property.to_json(include: {:reviews})
+        property.to_json(include: :reviews)
     end
 
 
