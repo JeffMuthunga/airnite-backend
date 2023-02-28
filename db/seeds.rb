@@ -33,9 +33,9 @@ puts "🌱 Seeding data..."
 
     rand(1..6).times do
     Review.create(
-        score: rand(1..10),
+        star_rating: rand(1..5),
         comment: Faker::Lorem.sentence,
-        property_id: property.id
+        property_id: property.id,
         user_id: rand(1..20)
     )
 

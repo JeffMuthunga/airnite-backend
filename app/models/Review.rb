@@ -1,3 +1,4 @@
 class Review < ActiveRecord::Base
-    belongs_to :properties
+    belongs_to :property
+    belongs_to :user
 end
