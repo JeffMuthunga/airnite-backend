@@ -21,8 +21,20 @@ class ApplicationController < Sinatra::Base
           }
         )
       end
-      
 
+    patch '/properties/:id' do
+      property = Property.find(params[:id])
+      property.update(price: params[:price])
+      property.to_json(
+          include: {
+            reviews: {
+              include: :user
+            }
+          }
+        )
+    end
+      
+      
 
 
 end
