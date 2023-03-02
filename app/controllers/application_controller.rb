@@ -33,7 +33,12 @@ class ApplicationController < Sinatra::Base
           }
         )
     end
-      
+
+    delete '/properties/:id' do
+      property = Property.find(params[:id])
+      property.destroy
+      property.to_json
+    end
       
 
 
