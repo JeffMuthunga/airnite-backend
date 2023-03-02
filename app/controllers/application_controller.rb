@@ -39,6 +39,25 @@ class ApplicationController < Sinatra::Base
       property.destroy
       property.to_json
     end
+
+    post '/properties' do
+      property = Property.create(
+        title: params[:title],
+        bedrooms: params[:bedrooms],
+        sqrfeet: params[:sqrfeet],
+        city: params[:city],
+        price: params[:price],
+        description: params[:description],
+        image: params[:image]
+      )
+      property.to_json(
+          include: {
+            reviews: {
+              include: :user
+            }
+          }
+        )
+    end
       
 
 
