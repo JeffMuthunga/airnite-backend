@@ -24,7 +24,7 @@ The Airnite LLC. is a real estate and marketing company that prides itself in al
 ![image](https://user-images.githubusercontent.com/118323350/222635084-ce7cd51d-a2f0-4e1a-ba42-a8c59e2e8bdb.png)
 
 
-## 3. Project Setup
+## Project Setup
 ## Getting Files
 1. Open your terminal.
 2. Install rvm and nvm on your machine, if not already installed.
@@ -52,9 +52,6 @@ Project is licensed and author does not grant permissions for Commercial use, Re
 
 ## License
 [MIT License](./license)
-
-
-
 
 ## Support and Contact Information
 For any queries or enquiries feel free to reach out at jeffmuthunga@gmail.com
