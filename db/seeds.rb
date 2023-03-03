@@ -17,13 +17,14 @@ puts "🌱 Seeding data..."
 "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1600"
 
 ]
+cities = ["Nairobi", "Mombasa", "Nakuru", "Kisumu", "Dodoma", "Kampala"]
     property=Property.create(
-        title: Faker::Company.name + "Hotel",
+        title: Faker::Company.name + " Hotel",
         bedrooms: rand(2..9),
         sqrfeet: rand(1000..6000),
-        city: Faker::Address.city,
+        city: cities.sample,
         price: rand(2500..30000),
-        description: Faker::Lorem.sentence,
+        description: Faker::Lorem.paragraph(3..6),
         image: images.sample
     )
    
