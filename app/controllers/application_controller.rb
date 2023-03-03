@@ -22,6 +22,7 @@ class ApplicationController < Sinatra::Base
         )
       end
 
+
     patch '/properties/:id' do
       property = Property.find(params[:id])
       property.update(price: params[:price])
@@ -57,6 +58,16 @@ class ApplicationController < Sinatra::Base
             }
           }
         )
+    end
+
+    post '/reviews' do
+      review = Review.create(
+        star_rating: params[:star_rating],
+        comment: params[:comment],
+        property_id: params[:property_id],
+        user_id: params[:user_id]
+      )
+      review.to_json
     end
       
 
