@@ -16,7 +16,8 @@ class ApplicationController < Sinatra::Base
         property.to_json(
           include: {
             reviews: {
-              include: :user
+              include: :user,
+              order: { star_rating: :asc}
             }
           }
         )
