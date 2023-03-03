@@ -51,6 +51,10 @@ Jeff Muthunga is the sole contributor to this project.
 Project is licensed and author does not grant permissions for Commercial use, Reproduction, Distribution, Modification, Patent and Private use. 
 
 ## License
+[MIT License](./license)
+
+
+
 
 ## Support and Contact Information
 For any queries or enquiries feel free to reach out at jeffmuthunga@gmail.com
