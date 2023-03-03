@@ -24,7 +24,7 @@ cities = ["Nairobi", "Mombasa", "Nakuru", "Kisumu", "Dodoma", "Kampala"]
         sqrfeet: rand(1000..6000),
         city: cities.sample,
         price: rand(2500..30000),
-        description: Faker::Lorem.paragraph(3..6),
+        description: Faker::Lorem.paragraph,
         image: images.sample
     )
    
