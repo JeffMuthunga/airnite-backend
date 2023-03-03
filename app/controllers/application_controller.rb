@@ -11,13 +11,23 @@ class ApplicationController < Sinatra::Base
             })
     end
 
+    get '/properties/limit_7' do
+      properties = Property.all.limit(7)
+      properties.to_json(
+            include: {
+                reviews: {
+                    include: :user
+                }
+            })
+
+    end
+
     get '/properties/:id' do 
         property = Property.find(params[:id])
         property.to_json(
           include: {
             reviews: {
-              include: :user,
-              order: { star_rating: :asc}
+              include: :user
             }
           }
         )
@@ -78,6 +88,7 @@ class ApplicationController < Sinatra::Base
       user.to_json
     end
       
+    
 
 
 end
