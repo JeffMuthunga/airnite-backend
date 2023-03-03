@@ -23,6 +23,8 @@ The Airnite LLC. is a real estate and marketing company that prides itself in al
 ![image](https://user-images.githubusercontent.com/118323350/222635056-0c04ed49-406b-45a3-a4fa-7a1b1063f0f2.png)
 ![image](https://user-images.githubusercontent.com/118323350/222635084-ce7cd51d-a2f0-4e1a-ba42-a8c59e2e8bdb.png)
 
+## Entity Relationship Diagram(ERD)
+![image](https://user-images.githubusercontent.com/118323350/222637210-472f7351-c9bf-461a-8f92-082190f87ed5.png)
 
 ## Project Setup
 ## Getting Files
