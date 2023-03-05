@@ -34,7 +34,9 @@ group :test do
 end
 
 group :production do 
-    gem 'pg', '~> 1.4', '>= 1.4.6' #postgres adapter verrsion
+    gem 'pg'
     gem 'puma', '~> 6.1', '>= 6.1.1' 
 
 end
+
+# , '~> 1.4', '>= 1.4.6'

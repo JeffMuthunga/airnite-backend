@@ -32,9 +32,13 @@ GEM
     minitest (5.17.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.8)
+    pg (1.4.6)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    puma (6.1.1)
+      nio4r (~> 2.0)
     rack (2.2.6.2)
     rack-contrib (2.3.0)
       rack (~> 2.0)
@@ -74,7 +78,6 @@ GEM
     sinatra-activerecord (2.0.26)
       activerecord (>= 4.1)
       sinatra (>= 1.0)
-    sqlite3 (1.6.1-x86_64-linux)
     tilt (2.1.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -87,7 +90,9 @@ DEPENDENCIES
   activerecord
   database_cleaner
   faker
+  pg
   pry
+  puma (~> 6.1, >= 6.1.1)
   rack-contrib
   rack-cors
   rack-test
@@ -98,7 +103,6 @@ DEPENDENCIES
   rspec-json_expectations
   sinatra
   sinatra-activerecord
-  sqlite3
   webrick
 
 BUNDLED WITH
